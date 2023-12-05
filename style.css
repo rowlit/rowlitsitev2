@@ -1,67 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
+body, html {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the side navigation */
-.sidenav {
+  padding: 0;
   height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
 }
 
-
-/* Side navigation links */
-.sidenav a {
-  color: white;
-  padding: 16px;
-  text-decoration: none;
-  display: block;
+.background-image {
+  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZciNSzcMVLUK9dQqpMgYvRR6TrfVrv6BGDHrIK_4oeiDsDVtrMMefON83r-Q7tGDUIdPEs_-0kx6UqZqCxVmiKUg1xqKh2zvzoBNi0XmqTCDCI7V9n5ignbRPC3px5h-d6c0r5XWThTW-wHMgOAvBSwZHy0iaWvZgFlScnNV3inXvqeyglKuaSwFMHdjH/s800/Tortellini_Bolognesi.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100%;
+  filter: blur(5px); 
 }
 
-/* Change color on hover */
-.sidenav a:hover {
-  background-color: #ddd;
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
   color: black;
 }
-
-/* Style the content */
-.content {
-  margin-left: 200px;
-  padding-left: 20px;
-}
-</style>
-</head>
-<body>
-
-<div class="sidenav">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-</div>
-
-<div class="content">
-  <h2>CSS Template</h2>
-  <p>A full-height, fixed sidenav and content.</p>
-</div>
-
-</body>
-</html>
-
-
